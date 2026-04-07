@@ -40,9 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    "rest_framework",
-    "api",
+    'rest_framework',
+    'api',
     'rest_framework_simplejwt',
+    'products',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +151,6 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=20),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1)
 }
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
